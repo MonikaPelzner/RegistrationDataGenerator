@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class DataGenerator {
+public class RegistrationDataGenerator {
     private Random random = new Random();
     private ArrayList<String> firstNameList = new ArrayList<>(Arrays.asList("Ania","Kamil","Olek","Imie2","Kasia","Zosia","Imię1"));
     private ArrayList<String> lastNameList = new ArrayList<>(Arrays.asList("Kowal","Nowak","Kowalski","Nazwisko","LastName","Dziuba"));
@@ -22,11 +22,11 @@ public class DataGenerator {
         return list.get(random.nextInt(list.size()-1));
     }
 
-    public DataGenerator() {
+    public RegistrationDataGenerator() {
     }
 
-    public FormData generate(){
-        FormData data = new FormData();
+    public RegistrationFormData generate(){
+        RegistrationFormData data = new RegistrationFormData();
         data.firstName = getRandom(firstNameList);
         data.lastName = getRandom(lastNameList);
         data.country = getRandom(countryList);

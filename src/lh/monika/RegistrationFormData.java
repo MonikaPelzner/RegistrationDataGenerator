@@ -1,6 +1,6 @@
 package lh.monika;
 
-public class FormData {
+public class RegistrationFormData {
     public String firstName;
     public String lastName;
     public String country;
@@ -10,3 +10,4 @@ public class FormData {
     // można użyć na potrzeby testów
     //public String checkPassword;
 }
+
